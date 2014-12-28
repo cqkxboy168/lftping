@@ -1,0 +1,10 @@
+---- outputStyleIsXML Matches (9 in 3 files) ----
+Lft.c:    if (sess->noisy && !outputStyleIsXML())
+Lft.c:    if (sess->noisy > 1 && !outputStyleIsXML()) 
+Lft.c:    if (sess->noisy && !outputStyleIsXML())    
+Lft.c:	if(outputStyleIsXML())
+Lft.c:			if(outputStyleIsXML())
+Lft.c:					if(outputStyleIsXML())
+Lft.c:	if(outputStyleIsXML())
+Lft_lib.c:int outputStyleIsXML(void)
+Lft_lib.h:int outputStyleIsXML(void);

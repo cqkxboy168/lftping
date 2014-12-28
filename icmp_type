@@ -1,0 +1,26 @@
+lft_lib.c:    if(ehip->tp->recv.tv_sec) {
+lft_lib.c:        if (ehip->last_hop.s_addr != ehip->tp->hopaddr.s_addr) {
+lft_lib.c:					printf(" asn=\"%d\"", ehip->asnumber);
+lft_lib.c:					printf("\"asn\":%d,",ehip->asnumber);
+lft_lib.c:					if (ehip->asnumber)
+lft_lib.c:						printf(" [%d]", ehip->asnumber);
+lft_lib.c:					printf(" net=\"%s\"", ehip->netname);
+lft_lib.c:					printf("\"net\":\"%s\",", ehip->netname);
+lft_lib.c:					if(ehip->netname && strlen(ehip->netname)>0)
+lft_lib.c:						printf(" [%s]", ehip->netname);
+lft_lib.c:            if (ehip->tp->icmp_type < -2 || ehip->tp->icmp_type > 17)
+lft_lib.c:					printf(" icmpcode=\"%d\"", ehip->tp->icmp_type);
+lft_lib.c:					printf("\"icmpcode\":%d,", ehip->tp->icmp_type);
+lft_lib.c:					printf (" [icmp code %d]", ehip->tp->icmp_type);
+lft_lib.c:                if (ehip->tp->icmp_type >= 0)
+lft_lib.c:						printf (" icmpmsg=\"%s\"", icmp_messages[ehip->tp->icmp_type + 1]);
+lft_lib.c:						printf("\"icmpmsg\":\"%s\",", icmp_messages[ehip->tp->icmp_type + 1]);
+lft_lib.c:						printf (" [%s]", icmp_messages[ehip->tp->icmp_type + 1]);                    
+lft_lib.c:            if (ehip->tp->icmp_type == -1) {
+lft_lib.c:            print_host (sess, ehip->tp->hopaddr);
+lft_lib.c:            //if (ehip->tp->icmp_type == -1 && (sess->protocol<2 || sess->protocol>3))
+lft_lib.c:				printf (";%.2f", timediff_ms(ehip->tp->sent, ehip->tp->recv));
+lft_lib.c:				printf (" timems=\"%.2f", timediff_ms(ehip->tp->sent, ehip->tp->recv));
+lft_lib.c:		printf ("/%.2f", timediff_ms(ehip->tp->sent, ehip->tp->recv));
+lft_lib.c:		printf("\"time\":\"%.2f",timediff_ms(ehip->tp->sent, ehip->tp->recv));
+lft_lib.c:		printf ("%c%.2f", ind, timediff_ms(ehip->tp->sent, ehip->tp->recv));
